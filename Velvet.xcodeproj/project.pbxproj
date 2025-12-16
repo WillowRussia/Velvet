@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5DB8E6FC2EF1F047007D047F /* VelvetUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5DB8E6FB2EF1F047007D047F /* VelvetUI */; };
+		5DB99A8D2EF1FA9D000B8BFC /* VelvetUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5DB99A8C2EF1FA9D000B8BFC /* VelvetUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5DB8E6E92EF1EEB4007D047F /* Velvet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Velvet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9548DB2EF1FB94001B5D4D /* Velvet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Velvet.app; path = "/Users/vostrov/XcodeProjects/Velvet/build/Debug-iphoneos/Velvet.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DB8E6FC2EF1F047007D047F /* VelvetUI in Frameworks */,
+				5DB99A8D2EF1FA9D000B8BFC /* VelvetUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,16 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				5DB8E6EB2EF1EEB4007D047F /* Velvet */,
-				5DB8E6EA2EF1EEB4007D047F /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		5DB8E6EA2EF1EEB4007D047F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5DB8E6E92EF1EEB4007D047F /* Velvet.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +61,10 @@
 			);
 			name = Velvet;
 			packageProductDependencies = (
-				5DB8E6FB2EF1F047007D047F /* VelvetUI */,
+				5DB99A8C2EF1FA9D000B8BFC /* VelvetUI */,
 			);
 			productName = Velvet;
-			productReference = 5DB8E6E92EF1EEB4007D047F /* Velvet.app */;
+			productReference = 5D9548DB2EF1FB94001B5D4D /* Velvet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,10 +92,10 @@
 			mainGroup = 5DB8E6E02EF1EEB4007D047F;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				5DB8E6FA2EF1F047007D047F /* XCLocalSwiftPackageReference "VelvetUI" */,
+				5DB99A8B2EF1FA9D000B8BFC /* XCLocalSwiftPackageReference "VelvetUI" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 5DB8E6EA2EF1EEB4007D047F /* Products */;
+			productRefGroup = 5DB8E6E02EF1EEB4007D047F;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -335,14 +326,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		5DB8E6FA2EF1F047007D047F /* XCLocalSwiftPackageReference "VelvetUI" */ = {
+		5DB99A8B2EF1FA9D000B8BFC /* XCLocalSwiftPackageReference "VelvetUI" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = VelvetUI;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5DB8E6FB2EF1F047007D047F /* VelvetUI */ = {
+		5DB99A8C2EF1FA9D000B8BFC /* VelvetUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = VelvetUI;
 		};
