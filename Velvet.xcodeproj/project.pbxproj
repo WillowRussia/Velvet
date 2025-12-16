@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5DB8E6FC2EF1F047007D047F /* VelvetUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5DB8E6FB2EF1F047007D047F /* VelvetUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5DB8E6E92EF1EEB4007D047F /* Velvet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Velvet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB8E6FC2EF1F047007D047F /* VelvetUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = Velvet;
 			packageProductDependencies = (
+				5DB8E6FB2EF1F047007D047F /* VelvetUI */,
 			);
 			productName = Velvet;
 			productReference = 5DB8E6E92EF1EEB4007D047F /* Velvet.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 5DB8E6E02EF1EEB4007D047F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5DB8E6FA2EF1F047007D047F /* XCLocalSwiftPackageReference "VelvetUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5DB8E6EA2EF1EEB4007D047F /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5DB8E6FA2EF1F047007D047F /* XCLocalSwiftPackageReference "VelvetUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = VelvetUI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5DB8E6FB2EF1F047007D047F /* VelvetUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VelvetUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5DB8E6E12EF1EEB4007D047F /* Project object */;
 }
