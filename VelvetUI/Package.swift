@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "VelvetUI",
+    platforms: [.iOS(.v17)],
     products: [
         .library(
             name: "VelvetUI",
