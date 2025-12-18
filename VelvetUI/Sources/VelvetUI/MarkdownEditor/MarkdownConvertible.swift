@@ -5,7 +5,7 @@
 //  Created by Илья Востров on 18.12.2025.
 //
 
-import UIKit
+import SwiftUI
 
 /// Протокол для объекта, способного конвертировать атрибутированный текст в Markdown.
 protocol MarkdownConvertible {
