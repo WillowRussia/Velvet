@@ -7,14 +7,16 @@
 
 import Foundation
 
-public enum Priority: String, Codable {
+
+public enum Priority: String, Codable , @unchecked Sendable {
     case nonPriority = "None"
     case lowPriority = "Low"
     case mediumPriority = "Medium"
     case highPriority = "High"
 }
 
-public struct Note: Identifiable, Codable, Equatable {
+
+public struct Note: Identifiable, Codable, Equatable, @unchecked Sendable {
     public let id: String
     public var title: String
     public let emoji: String
