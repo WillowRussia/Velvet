@@ -9,7 +9,7 @@ import SwiftUI
 import Markdown
 
 // MARK: - MarkdownEditorController
-class MarkdownEditorController: @preconcurrency MarkdownEditingController {
+final class MarkdownEditorController: @preconcurrency MarkdownEditingController {
     private weak var textView: UITextView?
     private let fontSizeView: CGFloat = 18
 
