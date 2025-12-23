@@ -54,6 +54,28 @@ final class NoteService {
         }
     }
     
+
+        func saveNote(id: String, title: String, content: String, dateEnd: Date?) async throws {
+            let fileName = "\(id).md"
+            let fileURL = documentsDirectory.appendingPathComponent(fileName)
+            
+            let currentContent = try String(contentsOf: fileURL, encoding: .utf8)
+            
+            guard var note = Note.fromMarkdown(currentContent) else {
+                throw NoteServiceError.failedToReadFile(fileURL.path)
+            }
+            
+            note.title = title
+            note.content = content
+            note.dateEnd = dateEnd
+            
+            let markdownContent = note.toMarkdown()
+            try markdownContent.write(to: fileURL, atomically: true, encoding: .utf8)
+            
+            let noteCD = NoteCD(fileUrl: fileURL)
+            try await database.saveNote(note: noteCD)
+        }
+
     /// Загружает все заметки из базы данных и читает их содержимое из файлов.
     func fetchNotes() async throws -> [Note] {
         let noteCDs = try database.fetchNotes()
